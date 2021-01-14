@@ -1,6 +1,10 @@
 * {
     margin: 0px;
 }
+p{
+    line-height:20px;
+    text-align:justify;
+}
 
 body{
     padding-top:20px;
@@ -20,7 +24,7 @@ div .profile-image {
 
 .section-one, .section-two, .section-three {
     padding: 10px 20px;
-    text-align: right justify;
+    text-align: left;
     font-family:Arial, 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
@@ -51,7 +55,7 @@ div .profile-image {
     height: auto;
 }
 .col-1 {
-    width: 300px;;
+    width: 300px;
     height: auto;
 }
 .right{
