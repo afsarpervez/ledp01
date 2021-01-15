@@ -3,16 +3,22 @@
     margin:0;
     padding:0;
 }
-.container{width:80%;background-color: lightgray;margin:0 auto;padding:0 20px;}
-nav.menu-01 {text-align: center;}
+.container{
+    width:80%;
+    background-color: lightgray;
+    margin:0 auto;padding:0 0px; 
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    position:relative;
+}
+nav.menu-01{
+    text-align: center;
+}
 
 .menu-01 ul.level-1 {
     list-style: none;
-    background: #efefef;
-    display: inline-table;
-    position:relative;
+    background-color: #efefef;
+    display: inline-table;    
 }
-
 .menu-01 ul.level-1 li{float: left;}
 
 .menu-01 ul.level-1 li a{
@@ -35,35 +41,147 @@ nav.menu-01 {text-align: center;}
     list-style-type: none;
     position: absolute;
     border-top:2px solid black;
-    display:none;
-    
+    display:none;    
 }
-
 .menu-01 > ul > li > .level-2 li {
     float: none;
     list-style-type: none;
-    background-color: green;
     border-bottom: 1px solid white;
 }
-
 .menu-01 ul.level-1 li:hover .level-2 li a {
-    background-color: #efefef;
-
+    background-color: #efefef;   
 }
-
 .menu-01 ul.level-1 li .level-2 li:hover a {
     background-color: lightblue;
+    z-index: 5;
 }
 
-.dropdown-menu:hover .level-2 {
+.menu-01 .dropdown-menu:hover .level-2 {
     background-color: blue;
     display: block;
+    z-index: 5;
 }
 
 
+/*Menu 02*/
+
+.menu-02 {
+    width:;
+    text-align: center;
+    display: block;
+    float: left;
+    position:relative;
+    
+}
+.menu-02 ul{
+    list-style-type:none;
+}
+.menu-02 ul.level-1 {
+    list-style: none;
+    background-color: darkkhaki;
+    display: inline-table;  /* inline table allow background property,*/
+    
+}
+.menu-02 ul.level-1 li a {
+    display:block;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-size: 17px;
+    color: black;
+}
+.menu-02 .level-2 {
+    display: block;
+    position: absolute;
+    display: none;
+    
+ }
+.menu-02 .level-1 :hover a {
+        background-color: #d8d173;
+    }
+
+.menu-02 ul.level-1 li:hover .level-2 li a {
+    background-color: darkkhaki;
+}
+.menu-02 .dropdown-menu:hover .level-2 {    
+    display: block;
+    z-index: 5; 
+    margin-top:-42px;
+    left:100%;   
+    min-width:180px;
+    background-color:black;
+}
+.menu-02 ul.level-1 li .level-2 li:hover a {
+    background-color: #d8d173;
+    z-index: 5;
+}
+
 
 /*Menu 02*/
 
 
+/********************************************************/
 
-/*Menu 02*/
+                            /*Menu 03*/
+
+
+.menu-03 {
+    text-align: center;    
+    display:inline-block;
+    position: relative;
+    
+    
+}
+
+.menu-03 ul {
+    list-style-type: none;
+    
+ }
+
+.menu-03 ul.level-1 {
+    list-style: none;
+    background-color: blue;
+    display: inline-table; /* inline table allow background property,*/
+}
+
+.menu-03 ul.level-1 li a {
+    display: block;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-size: 17px;
+    color: white;
+}    
+
+.menu-03 .level-2 {
+    display: block;
+    position: absolute;
+    display: none;
+}
+
+.menu-03 .level-1 :hover a {
+    background-color: #0000c3;
+}
+
+.menu-03 ul.level-1 li:hover .level-2 li a {
+    background-color: blue;
+}
+
+.menu-03 .dropdown-menu:hover .level-2 {
+    display: block;
+    z-index: 5;
+    margin-top: -42px;
+    right: 100%;
+    min-width: 180px;
+    background-color: black;
+}
+
+    .menu-03 ul.level-1 li .level-2 li:hover a {
+        background-color: #0000c3;
+        z-index: 5;
+    }
+
+
+/*Menu 03*/
+
+.clear{
+    clear:both;
+}
